@@ -14,31 +14,52 @@ html {
 
 .mainPageTitle {
   color: #fff;
-  font-family: "Roboto", "sans";
+  font-family: 'Roboto','sans';
   text-transform: uppercase;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.webAppPageTitle {
+  color: #fff;
+  font-family: 'Roboto','sans';
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0%;
 }
 
 .pageTitle {
   margin-left: 12px;
   color: #fff;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-shadow: 0px 0px 12px #ffffff;
 }
 
 .paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: 2%;
   margin-right: 2%;
   color: #fff;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-weight: 400;
   font-size: 15px;
   text-shadow: 0px 0px 6px #f8f8f8;
@@ -47,7 +68,7 @@ html {
 }
 
 .images {
-  z-index: 1000;
+  z-index: +1000;
   float: right;
   clear: right;
   margin-left: 2%;
@@ -55,7 +76,7 @@ html {
 }
 
 .macOS_vm {
-  z-index: 1000;
+  z-index: +1000;
   float: right;
   clear: right;
   margin-left: 2%;
@@ -63,14 +84,24 @@ html {
 }
 
 .topNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .topNavigation > * > * {
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   line-height: 30px;
   color: white;
@@ -82,7 +113,7 @@ html {
   margin-right: 12px;
   margin-top: 12px;
   margin-bottom: 3px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -91,7 +122,9 @@ html {
   background-color: #fff;
   border: none;
   border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
@@ -99,9 +132,11 @@ html {
 
 .topNavigation > * > *:hover {
   background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+          box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
-  transform: translateY(-5px) scale(110%);
+  -webkit-transform: translateY(-5px) scale(110%);
+          transform: translateY(-5px) scale(110%);
 }
 
 .tg {
@@ -152,11 +187,39 @@ html {
   margin-left: 30vw;
   margin-bottom: 30vh;
   margin-right: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homersDohContainer {
+  margin-top: 0%;
+  margin-left: 30vw;
+  margin-bottom: 30vh;
+  margin-right: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .homeMainButtonContainer > #homeMainButton {
@@ -168,7 +231,9 @@ html {
   background-color: #fff;
   border: none;
   border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
@@ -176,9 +241,11 @@ html {
 
 .homeMainButtonContainer > #homeMainButton:hover {
   background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+          box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
-  transform: translateY(-7px) scale(120%);
+  -webkit-transform: translateY(-7px) scale(120%);
+          transform: translateY(-7px) scale(120%);
 }
 
 @media screen and (max-width: 183px) {
@@ -186,89 +253,112 @@ html {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 1050px) {
   .images {
-    z-index: 1000;
+    z-index: +1000;
     float: right;
     clear: right;
     margin-left: 2%;
     margin-right: 1.5%;
-    transform: scale(80%);
+    -webkit-transform: scale(80%);
+            transform: scale(80%);
   }
 }
+
 @media screen and (max-width: 800px) {
   .images {
-    z-index: 1000;
+    z-index: +1000;
     float: right;
     clear: right;
     margin-left: 2%;
     margin-right: 1%;
-    transform: scale(70%);
+    -webkit-transform: scale(70%);
+            transform: scale(70%);
   }
 }
+
 @media screen and (max-width: 600px) {
   .images {
-    z-index: 1000;
+    z-index: +1000;
     float: right;
     clear: right;
     margin-left: 2%;
     margin-right: 0.5%;
-    transform: scale(60%);
+    -webkit-transform: scale(60%);
+            transform: scale(60%);
   }
 }
+
 @media screen and (max-width: 450px) {
   .topNavigation {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .topNavigation > * {
-    align-content: center;
-    justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     width: 200vw;
   }
-
   .leftSideNavigationButtons {
     padding-bottom: 15px;
   }
-
   .rightSideNavigationButtons {
     padding-top: 2px;
     border-top: 2px solid gray;
   }
-
   .topNavigation > * > * {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     color: black;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 0px;
   }
-
   .topNavigation > * > * {
     width: 90%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .homeMainButtonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: 0%;
     margin-right: 0%;
-    align-content: center;
-    justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
-
   #homeMainButton {
-    align-content: center;
-    justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     margin-left: 5%;
     width: 90vw;
     height: 100vh;
   }
-}/*# sourceMappingURL=styleSheet.css.map */
+}
+/*# sourceMappingURL=styleSheet.css.map */
